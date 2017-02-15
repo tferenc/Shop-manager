@@ -23,7 +23,6 @@ public abstract class Tej
         this.gyarto = gyarto;
         this.szavatossagiido = szavatossagiido;
         this.zsirtartalom = zsirtartalom;
-        this.ar = ar;
     }
 
     public long getVonalkod()
@@ -58,6 +57,7 @@ public abstract class Tej
     {
         return ar;
     }
+
     public String toString()
     {
         return ("Űrtartalom: " + getUrtartalom()
