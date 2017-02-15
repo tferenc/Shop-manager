@@ -2,7 +2,7 @@
 import java.util.Date;
 
 
-public abstract class Tej
+public abstract class Tej extends Elelmiszer
 {
     private long vonalkod;
     final int LITER = 4;
@@ -18,14 +18,12 @@ public abstract class Tej
 
     public Tej(long vonalkod,int urtartalom, String gyarto,Date szavatossagiido, double zsirtartalom)
     {
-        this.vonalkod = vonalkod;
+        super(vonalkod, gyarto, szavatossagiido);
         this.urtartalom = urtartalom;
-        this.gyarto = gyarto;
-        this.szavatossagiido = szavatossagiido;
         this.zsirtartalom = zsirtartalom;
     }
 
-    public long getVonalkod()
+    public Long getVonalkod()
 
     {
         return vonalkod;
