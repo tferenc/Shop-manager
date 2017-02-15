@@ -2,7 +2,7 @@
 import java.util.Date;
 
 
-public class Tej
+public abstract class Tej
 {
     private long vonalkod;
     final int LITER = 4;
@@ -10,13 +10,13 @@ public class Tej
     final int POHAR = 1;
     final double ZSIROS =3.6;
     final double FELZSIROS = 2.8;
-    private int urtartalom;
-    private String gyarto;
-    private Date szavatossagiido;
-    private double zsirtartalom;
-    private long ar;
+    protected int urtartalom;
+    protected String gyarto;
+    protected Date szavatossagiido;
+    protected double zsirtartalom;
+    protected long ar;
 
-    public Tej(long vonalkod,int urtartalom, String gyarto,Date szavatossagiido, double zsirtartalom, long ar)
+    public Tej(long vonalkod,int urtartalom, String gyarto,Date szavatossagiido, double zsirtartalom)
     {
         this.vonalkod = vonalkod;
         this.urtartalom = urtartalom;
@@ -27,6 +27,7 @@ public class Tej
     }
 
     public long getVonalkod()
+
     {
         return vonalkod;
     }
