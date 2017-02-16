@@ -21,5 +21,4 @@ public abstract class Elelmiszer extends Aru
     public abstract boolean joMeg();
     public abstract String toString();
 
-
 }

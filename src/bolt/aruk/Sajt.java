@@ -10,9 +10,6 @@ public class Sajt extends Elelmiszer
 {
     protected double suly;
     protected double zsirtartalom;
-    protected Long vonalkod;
-    protected String gyarto;
-    protected Date szavatossagiido;
 
     public Sajt(Long vonalkod, double suly, double zsirtartalom, String gyarto, Date szavatossagiido)
     {

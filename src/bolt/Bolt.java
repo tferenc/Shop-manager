@@ -1,9 +1,9 @@
 package bolt;
+
 import bolt.aruk.Tej;
 import bolt.aruk.Sajt;
 import bolt.aruk.Elelmiszer;
 import java.util.Hashtable;
-
 
 
 public class Bolt
@@ -13,6 +13,7 @@ public class Bolt
     private String cim;
     private String tulajdonos;
     private Hashtable<Long, BoltBejegyzes> elelmiszerpult;
+
     public Bolt(String nev, String cim, String tulajdonos, Hashtable<Long, BoltBejegyzes> elelmiszerpult)
     {
         this.nev = nev;

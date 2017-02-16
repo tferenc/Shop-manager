@@ -5,17 +5,13 @@ import java.util.Date;
 
 public abstract class Tej extends Elelmiszer
 {
-    private long vonalkod;
-    final int LITER = 4;
-    final int FELLITER = 2;
-    final int POHAR = 1;
-    final double ZSIROS =3.6;
-    final double FELZSIROS = 2.8;
+    public static final int LITER = 10;
+    public static final int FELLITER = 5;
+    public static final int POHAR = 2;
+    public static final double ZSIROS =3.6;
+    public static final double FELZSIROS = 2.8;
     protected int urtartalom;
-    protected String gyarto;
-    protected Date szavatossagiido;
     protected double zsirtartalom;
-    protected long ar;
 
     public Tej(long vonalkod,int urtartalom, String gyarto,Date szavatossagiido, double zsirtartalom)
     {
@@ -28,13 +24,6 @@ public abstract class Tej extends Elelmiszer
 
     {
         return vonalkod;
-    }
-    public boolean joMeg() {
-        Date now = new Date();
-        if (now.before(szavatossagiido)) {
-            return true;
-        }
-        return false;
     }
     public int getUrtartalom()
     {
@@ -52,17 +41,18 @@ public abstract class Tej extends Elelmiszer
     {
         return zsirtartalom;
     }
-    public long getAr()
-    {
-        return ar;
+    public boolean joMeg() {
+        Date now = new Date();
+        if (now.before(szavatossagiido)) {
+            return true;
+        }
+        return false;
     }
 
     public String toString()
     {
         return ("Űrtartalom: " + getUrtartalom()
                 + "\nGyártó: "+ getGyarto() + "\nSzavatossági idő: " + getSzavatossagiido()
-                + "\nZsírtartalom: " + getZsirtartalom() + "\nÁr: "+ getAr());
+                + "\nZsírtartalom: " + getZsirtartalom());
     }
-
-
 }
