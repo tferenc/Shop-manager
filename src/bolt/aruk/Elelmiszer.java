@@ -1,9 +1,9 @@
-/**
- * Created by tamasferenc on 2017.02.15..
- */
+package bolt.aruk;
+
+import bolt.Aru;
 import java.util.Date;
 
-public abstract class Elelmiszer
+public abstract class Elelmiszer extends Aru
 {
     protected Long vonalkod;
     protected String gyarto;

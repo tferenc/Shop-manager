@@ -1,9 +1,12 @@
+package bolt.aruk;
+
 import java.util.Date;
+
 
 /**
  * Created by tamasferenc on 2017.02.15..
  */
-public class Sajt
+public class Sajt extends Elelmiszer
 {
     protected double suly;
     protected double zsirtartalom;
@@ -13,12 +16,10 @@ public class Sajt
 
     public Sajt(Long vonalkod, double suly, double zsirtartalom, String gyarto, Date szavatossagiido)
     {
-        this.vonalkod = vonalkod;
-
+        super(vonalkod, gyarto, szavatossagiido);
         this.suly = suly;
         this.zsirtartalom = zsirtartalom;
-        this.gyarto = gyarto;
-        this. szavatossagiido = szavatossagiido;
+
     }
 
     public double getSuly() {

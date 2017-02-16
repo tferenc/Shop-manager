@@ -1,5 +1,7 @@
-import java.util.Date;
+package bolt.aruk.tej;
 
+import java.util.Date;
+import bolt.aruk.Tej;
 /**
  * Created by tamasferenc on 2017.02.15..
  */

@@ -1,3 +1,7 @@
+package bolt;
+import bolt.aruk.Tej;
+import bolt.aruk.Sajt;
+import bolt.aruk.Elelmiszer;
 import java.util.Hashtable;
 
 
